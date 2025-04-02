@@ -1,28 +1,24 @@
-import './App.css'
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./container/Navbar";
+import Signup from "./pages/Signup";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Settings from "./pages/Settings";
+import Profile from "./pages/Profile";
 
-function App() {
+export default function App() {
 
-  return (
-    <div className='container'>
-      <div>
-        <div>
-          <h2>Contacts</h2>
-          <p>show online only <span>1 online</span></p>
-        </div>
+    return (
+      <>
+        <Navbar />
 
-        <div>
-          <div>
-            <p>img</p>
-            <p>nome da pessoa</p>
-            <p>status</p>
-          </div>
-        </div>
-      </div>
-      <div>
-        <h2>Sovai</h2>
-      </div>
-    </div>
-  )
-}
-
-export default App
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/settings" element={<Settings />} />
+          <Route path="/profile" element={<Profile />} />
+        </Routes>
+      </>
+    )
+  }
