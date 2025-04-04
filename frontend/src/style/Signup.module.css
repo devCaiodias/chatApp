@@ -1,12 +1,11 @@
 .signup {
-    background-color: white;
-    color: black;
+    background-color: #0e192bcc;
+    color: white;
     width: 500px;
-    height: 500px;
   
     
     position: absolute;
-    top: 60%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
   
@@ -18,4 +17,65 @@
 
 .signup h1 {
   text-align: center;
+}
+
+.form_container {
+  display: block;
+  flex-direction: column;
+}
+
+.form_sig {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  margin: 30px 0px;
+}
+
+.form_sig label span{
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.form_sig input {
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px;
+  border: none;
+  background-color: #E9EAEE;
+}
+
+
+.form_sig button {
+  position: absolute;
+  padding: 5px;
+  border-radius: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.showPassword {
+  color: white;
+}
+
+.button_signip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: none;
+  background-color: #A5ABB7;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.div_link {
+   text-align: center;
+}
+
+
+.link_login {
+  text-decoration: none;
+  color: #E9EAEE;
 }
