@@ -4,7 +4,7 @@ import style from '../style/Navbar.module.css'
 import { CiSettings } from 'react-icons/ci'
 
 export default function Navbar () {
-    const { logout, authUser} = useAuthStore()
+    const { logout, authUser} = useAuthStore() as any
   
   return (
     <>

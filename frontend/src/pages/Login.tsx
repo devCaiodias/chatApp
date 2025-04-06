@@ -4,6 +4,7 @@ import { useAuthStore } from "../store/useAuthStore"
 import { Eye, EyeOff, LoaderCircle } from "lucide-react"
 import styles from '../style/App.module.css'
 import toast from "react-hot-toast"
+import { Link } from "react-router-dom"
 
 export default function Login() {
     const [showPassword, setShowPassword] = useState(false)
@@ -12,7 +13,7 @@ export default function Login() {
         password: ""
     })
 
-    const {login, IsLoggingIng} = useAuthStore()
+    const {login, IsLoggingIng} = useAuthStore() as any
 
     const validateForm = () => {
         if (!formData.email.trim()) return toast.error("Email is required")
@@ -70,6 +71,14 @@ export default function Login() {
                     )}
                 </button>
             </form>
+            <div className={style.div_link}>
+                <p>
+                    Already have an account?{" "}
+                    <Link to="/signup" className={style.link_login}>
+                        Sign up
+                    </Link>
+                </p>
+            </div>
         </div>
     )
 }
