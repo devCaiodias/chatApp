@@ -1,0 +1,146 @@
+.signup {
+    background-color: #0e192bcc;
+    color: white;
+    width: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+  
+    
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+ 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+
+.signup h1 {
+    text-align: center;
+    margin: 2px;
+}
+
+.signup p {
+    text-align: center;
+    margin: 5px 0px;
+}
+
+.img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img_profile {
+    position: relative;
+}
+
+.img_profile img {
+    border-radius: 10px;
+    border: 4px;
+}
+
+.icon_camera {
+    position: absolute;
+    bottom: 3px;
+    right: 0px;
+    background-color: rgba(0, 8, 255, 0.509);
+    padding: 0.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.icon_camera:hover {
+    transform: scale(1.05);
+}
+
+.icon_camera.updating {
+    animation: pulse is infinite;
+    pointer-events: none;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.input_avatar {
+    display: none;
+}
+
+.dados_container {
+  margin-top: 1.5rem;
+}
+
+.fullname {
+  margin-top: 0.375rem;
+}
+
+.name{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.user_name {
+  padding: 10px;
+  background-color: rgba(0, 98, 255, 0.207);
+  border-radius: 10px;
+  border: 1px solid #E9EAEE;
+}
+
+.container_information {
+  margin: 30px 0px 0px 0px;
+  background-color: #a5abb724;
+  padding: 5px;
+}
+
+.container_information h2 {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 500;    /* font-medium */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.account_info {
+  font-size: 0.875rem;
+}
+
+.info_row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.status_active {
+  color: #22c55e;
+}
+
+
+.form_sig {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    margin: 30px 0px;
+  }
+  
+  .form_sig label span{
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  
+  .form_sig input {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    border: none;
+    background-color: #E9EAEE;
+  }
